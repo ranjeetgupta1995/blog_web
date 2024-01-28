@@ -25,11 +25,12 @@ header{
 header a{
   text-decoration: none;
   color: inherit;
-}
-header a.logo{
   font-weight: bold;
-  font-style: 1.5rem;
 }
+/* header img{
+  width: 500px;
+  height: 100%;
+} */
 header nav{
   display: flex;
   gap: 15px;
@@ -86,8 +87,9 @@ input {
 }
 button{
   cursor: pointer;
-  width: 100%;
+  width: 50%;
   display: block;
+  margin: auto;
   background-color:#555;
   border: 0;
   color: #fff;

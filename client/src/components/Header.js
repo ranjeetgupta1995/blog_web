@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { UserContext } from "../context/UserContext";
 
@@ -26,7 +26,9 @@ function Header() {
 
     return (
         <header>
-            <Link to={'/'} className="logo" >MyBlog</Link>
+            <Link to={'/'} className="logo" >
+                <h1 style={{fontStyle:'italic'}}>My<span style={{background:'black', color:'#fff', borderRadius:'5px', paddingRight: '5px', paddingLeft: '5px'}}>Blogs</span></h1>
+            </Link>
             <nav>
                 {username && (
                     <>
